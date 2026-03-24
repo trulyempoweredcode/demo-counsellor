@@ -59,16 +59,18 @@
   margin-bottom: var(--space-sm);
 }
 
-/* 4. Approach step numbers — much larger, properly centered */
+/* 4. Approach step numbers — larger, visually centered */
 .approach-item__number {
   width: 56px;
   height: 56px;
   min-width: 56px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-body);
+  font-weight: 600;
 }
 
 /* 5. Visible icon backgrounds on all cards */
@@ -121,7 +123,7 @@ a.card--service:hover .card__link {
     top: 100px;
     align-self: start;
     margin-top: var(--space-2xl);
-    padding: var(--space-xl);
+    padding: var(--space-xl) var(--space-xl) var(--space-2xl);
     background: var(--color-surface);
     border-radius: var(--radius-lg);
     border: 1px solid var(--color-border-light);
@@ -215,7 +217,7 @@ a.card--service:hover .card__link {
 }
 
 .services-sidebar__btn:first-of-type {
-  margin-top: var(--space-xl);
+  margin-top: var(--space-lg);
 }
 
 /* 10. Fix checklist inside service-detail — inline SVG checkmarks */
