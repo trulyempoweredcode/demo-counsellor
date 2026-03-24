@@ -48,9 +48,10 @@
   justify-content: center;
 }
 
-/* 2. Constrain about-hero image to viewport height */
+/* 2. Constrain about-hero image to viewport height, no border */
 .about-hero__image {
   max-height: 100vh;
+  border-radius: 0;
 }
 
 /* 3. Approach step headings + spacing */
@@ -90,7 +91,8 @@
 }
 
 /* 6. Larger FAQ question titles */
-.faq-item__question {
+.faq-item__question,
+.accordion__trigger {
   font-size: var(--text-lg);
 }
 
