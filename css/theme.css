@@ -40,3 +40,20 @@
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
+/* --- Site Overrides --- */
+
+/* 1. Center "Learn more" links in service cards */
+.card--service .card__link {
+  justify-content: center;
+}
+
+/* 2. Constrain about-hero image to viewport height */
+.about-hero__image {
+  max-height: 100vh;
+}
+
+/* 3. Bump approach step headings to match standard h3 size */
+.approach-item h3 {
+  font-size: var(--text-lg);
+}
