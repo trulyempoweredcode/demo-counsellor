@@ -210,9 +210,9 @@ a.card--service:hover .card__link {
 }
 
 .services-sidebar__btn {
-  display: block;
+  display: flex;
   width: 100%;
-  text-align: center;
+  justify-content: center;
   margin-top: var(--space-sm);
 }
 
