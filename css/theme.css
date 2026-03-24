@@ -82,12 +82,17 @@
   color: var(--color-primary);
 }
 
-/* On alt sections, use stronger contrast */
+/* On alt sections, icon needs contrast against white card bg */
 .section--alt .card__icon,
 .section--alt .card--service .card__icon,
 .section--alt .card--feature .card__icon {
-  background-color: var(--color-surface) !important;
+  background-color: var(--color-surface-alt) !important;
   color: var(--color-primary);
+}
+
+/* 5b. Step numbers use sans-serif for proper centering */
+.step__number {
+  font-family: var(--font-body);
 }
 
 /* 6. Larger FAQ question titles */
