@@ -54,9 +54,8 @@
   border-radius: 0;
 }
 
-/* 3. Approach step headings + spacing */
+/* 3. Approach step headings spacing */
 .approach-item h3 {
-  font-size: var(--text-lg);
   margin-bottom: var(--space-sm);
 }
 
@@ -95,13 +94,7 @@
   font-family: var(--font-body);
 }
 
-/* 6. Larger FAQ question titles */
-.faq-item__question,
-.accordion__trigger {
-  font-size: var(--text-lg);
-}
-
-/* 7. Clickable service cards (homepage + services page) */
+/* 6. Clickable service cards (homepage + services page) */
 a.card--service {
   text-decoration: none;
   color: inherit;
