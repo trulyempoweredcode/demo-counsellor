@@ -66,6 +66,9 @@
   min-width: 56px;
   font-size: 1.5rem;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 5. Visible icon backgrounds on all cards */
@@ -83,7 +86,99 @@
   font-size: var(--text-lg);
 }
 
-/* 7. Fix checklist inside service-detail — inline SVG checkmarks */
+/* 7. Services page — card grid links reset */
+a.card--service {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.card--service:hover .card__link {
+  gap: var(--space-sm);
+}
+
+/* 8. Services page — two-column layout with sticky sidebar */
+.services-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.services-sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .services-layout {
+    grid-template-columns: 1fr 260px;
+    gap: var(--space-2xl);
+    align-items: start;
+  }
+
+  .services-sidebar {
+    display: block;
+    position: sticky;
+    top: 100px;
+    align-self: start;
+    padding: var(--space-xl);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+.services-sidebar__heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+.services-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-xl);
+}
+
+.services-sidebar__link {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  transition: all var(--transition-fast);
+}
+
+.services-sidebar__link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-surface-alt);
+}
+
+.services-sidebar__link--active {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  border-left-color: var(--color-primary);
+  background-color: var(--color-surface-alt);
+}
+
+/* 9. Services detail sections — remove container padding when inside layout */
+.services-content .section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.services-content .container--narrow {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* 10. Fix checklist inside service-detail — inline SVG checkmarks */
 .service-detail ul.checklist li {
   display: flex;
   align-items: baseline;
