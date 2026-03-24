@@ -53,23 +53,27 @@
   max-height: 100vh;
 }
 
-/* 3. Bump approach step headings to match standard h3 size */
+/* 3. Approach step headings + spacing */
 .approach-item h3 {
   font-size: var(--text-lg);
+  margin-bottom: var(--space-sm);
 }
 
-/* 4. Larger approach step numbers */
+/* 4. Approach step numbers — much larger, properly centered */
 .approach-item__number {
-  width: 48px;
-  height: 48px;
-  font-size: var(--text-lg);
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
-/* 5. Visible icon backgrounds on white cards */
+/* 5. Visible icon backgrounds on all cards */
 .card__icon {
   background-color: var(--color-bg-alt);
 }
 
 .section--alt .card__icon {
-  background-color: var(--color-surface-alt);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
 }
