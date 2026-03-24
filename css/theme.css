@@ -82,3 +82,26 @@
 .faq-item__question {
   font-size: var(--text-lg);
 }
+
+/* 7. Fix checklist inside service-detail — inline SVG checkmarks */
+.service-detail ul.checklist li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  padding-left: 0;
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+.service-detail ul.checklist li::before {
+  display: none;
+}
+
+.service-detail ul.checklist li svg {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  color: var(--color-primary);
+  position: relative;
+  top: 2px;
+}
