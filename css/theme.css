@@ -86,7 +86,7 @@
   font-size: var(--text-lg);
 }
 
-/* 7. Services page — card grid links reset */
+/* 7. Clickable service cards (homepage + services page) */
 a.card--service {
   text-decoration: none;
   color: inherit;
@@ -167,15 +167,48 @@ a.card--service:hover .card__link {
   background-color: var(--color-surface-alt);
 }
 
-/* 9. Services detail sections — remove container padding when inside layout */
-.services-content .section {
-  padding-left: 0;
-  padding-right: 0;
+/* 9. Service sections — clean layout with dividers */
+.service-section {
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--color-border-light);
 }
 
-.services-content .container--narrow {
-  max-width: 100%;
-  padding: 0;
+.service-section:last-of-type {
+  border-bottom: none;
+}
+
+.service-detail__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.service-detail__header .service-detail__icon {
+  margin-bottom: 0;
+}
+
+.service-detail__header h2 {
+  margin: 0;
+}
+
+.service-detail p {
+  margin-bottom: var(--space-sm);
+}
+
+.service-detail p:last-of-type {
+  margin-bottom: var(--space-md);
+}
+
+.services-sidebar__btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: var(--space-sm);
+}
+
+.services-sidebar__btn:first-of-type {
+  margin-top: var(--space-xl);
 }
 
 /* 10. Fix checklist inside service-detail — inline SVG checkmarks */
