@@ -74,12 +74,18 @@
 }
 
 /* 5. Visible icon backgrounds on all cards */
-.card__icon {
-  background-color: var(--color-surface);
+.card__icon,
+.card--service .card__icon,
+.card--feature .card__icon {
+  background-color: var(--color-bg-alt) !important;
+  color: var(--color-primary);
 }
 
-.section--alt .card__icon {
-  background-color: var(--color-surface);
+/* On alt sections, use stronger contrast */
+.section--alt .card__icon,
+.section--alt .card--service .card__icon,
+.section--alt .card--feature .card__icon {
+  background-color: var(--color-surface) !important;
   color: var(--color-primary);
 }
 
