@@ -57,3 +57,19 @@
 .approach-item h3 {
   font-size: var(--text-lg);
 }
+
+/* 4. Larger approach step numbers */
+.approach-item__number {
+  width: 48px;
+  height: 48px;
+  font-size: var(--text-lg);
+}
+
+/* 5. Visible icon backgrounds on white cards */
+.card__icon {
+  background-color: var(--color-bg-alt);
+}
+
+.section--alt .card__icon {
+  background-color: var(--color-surface-alt);
+}
