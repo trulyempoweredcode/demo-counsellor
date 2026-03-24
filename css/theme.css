@@ -77,3 +77,8 @@
   background-color: var(--color-primary);
   color: var(--color-text-inverse);
 }
+
+/* 6. Larger FAQ question titles */
+.faq-item__question {
+  font-size: var(--text-lg);
+}
