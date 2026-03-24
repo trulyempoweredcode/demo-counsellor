@@ -2072,7 +2072,7 @@ body:has(.nav--transparent) .hero--showcase {
 }
 
 .card__title {
-  font-size: var(--text-h3-desktop);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   margin-bottom: var(--space-sm);
 }
 
@@ -2592,7 +2592,7 @@ body:has(.nav--transparent) .hero--showcase {
 }
 
 .approach-item h3 {
-  font-size: var(--text-lg);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   margin-bottom: var(--space-sm);
 }
 
@@ -2847,7 +2847,7 @@ body:has(.nav--transparent) .hero--showcase {
 }
 
 .pricing-card h3 {
-  font-size: var(--text-h3-desktop);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   margin-bottom: var(--space-sm);
 }
 
@@ -3811,7 +3811,7 @@ body:has(.nav--transparent) .hero--showcase {
 }
 
 .step__title {
-  font-size: var(--text-h3-desktop);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   margin-bottom: var(--space-sm);
 }
 
@@ -3909,7 +3909,7 @@ body:has(.nav--transparent) .hero--showcase {
 }
 
 .image-card__title {
-  font-size: var(--text-h3-desktop);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   margin-bottom: var(--space-sm);
 }
 
@@ -3987,7 +3987,7 @@ body:has(.nav--transparent) .hero--showcase {
 }
 
 .overlay-card__title {
-  font-size: var(--text-h3-desktop);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   color: var(--color-text-inverse);
   font-weight: var(--font-weight-bold);
 }
@@ -4948,7 +4948,7 @@ body:has(.nav--transparent) .hero--showcase {
   padding: var(--space-lg) 0;
   text-align: left;
   font-family: var(--font-heading);
-  font-size: var(--text-md);
+  font-size: calc(var(--text-h3-desktop) * 0.85);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-heading);
   cursor: pointer;
@@ -6161,7 +6161,7 @@ body:has(.nav--transparent) .hero--showcase {
 
 .blog-card__title {
   font-family: var(--font-heading);
-  font-size: var(--text-h3-desktop);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-heading);
   line-height: var(--line-height-tight);
