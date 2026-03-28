@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "demo-counsellor",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "D:/claude-custom-projects/Ai-Editor-Sites/demo-counsellor", "-l", "3001"],
+      "port": 3001
+    }
+  ]
+}
